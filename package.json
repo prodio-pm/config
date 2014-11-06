@@ -1,0 +1,22 @@
+{
+  "name": "prodio-config",
+  "version": "0.0.1",
+  "description": "Configuration management for prodio",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:prodio-pm/config.git"
+  },
+  "author": "Jeremy Darling <jeremy.darling@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/prodio-pm/config/issues"
+  },
+  "homepage": "https://github.com/prodio-pm/config",
+  "devDependencies": {
+    "mocha": "^2.0.1"
+  }
+}

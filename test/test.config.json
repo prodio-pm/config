@@ -1,0 +1,9 @@
+{
+  default: {
+    testValue: 'value',
+    anotherValue: 'another'
+  },
+  test: {
+    anotherValue: 'value'
+  }
+}
