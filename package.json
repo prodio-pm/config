@@ -1,6 +1,6 @@
 {
   "name": "prodio-config",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Configuration management for prodio",
   "main": "index.js",
   "scripts": {
