@@ -120,4 +120,18 @@ describe('Loader', function(){
     assert(sec.route==='/api/v1/', 'Invalid value route in section api');
     done();
   });
+  it('Should allow for environment variables instead of hard coded values', function(done){
+    var envBu = process.env.ENV_CUSTOM;
+    var expected = process.env.ENV_CUSTOM = 'Value';
+    var config = new Loader({
+      defaults: {
+        someValue: {
+          $env: 'ENV_CUSTOM'
+        }
+      }
+    });
+    process.env.ENV_CUSTOM=envBu;
+    assert(config.values.someValue===expected, 'Expected "'+expected+'"" for config.values.someValue but got "'+config.values.someValue+'"');
+    done();
+  });
 });
